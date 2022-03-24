@@ -1,0 +1,383 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+}
+
+header a {
+  font-family: 'Poppins', sans-serif;
+  color: #6070ff;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header nav {
+  font-family: 'Poppins', sans-serif;
+  color: #6070ff;
+  font-weight: bold;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+p {
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.grid h2,
+.nav h3,
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.introduction_section {
+  background-image: url("./images/header-shapes\ mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30px 150px 30px;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+}
+
+.introduction_section .intro_title h1 {
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.contact-form p {
+  color: #fff;
+  height: 102px;
+  padding: 0;
+  top: 4802px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.introduction_section .intro_descript p {
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.connect_links a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6070ff;
+  font-size: 16px;
+}
+
+.connect_links ul {
+  display: flex;
+  padding: 0;
+  margin-left: -20px;
+}
+
+.connect_links ul li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  height: auto;
+  width: fit-content(100%);
+}
+
+h1 .l-2 {
+  font-size: 40px;
+  color: #172b4d;
+}
+
+.text-2 {
+  margin-top: -30px;
+  margin-right: 24px;
+}
+
+.links ul {
+  font-size: 16px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  display: flex;
+  margin-left: -45px;
+}
+
+.links ul li {
+  list-style-type: none;
+  margin-left: 5px;
+}
+
+.links > a {
+  text-decoration: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #c7c9d1;
+  background-color: #fff;
+  margin-top: 114px;
+  left: 24px;
+  border-radius: 16px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding: 16px;
+}
+
+.l-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 0 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card ul li {
+  list-style: none;
+  background-color: #ebebff;
+  font-size: 12px;
+  color: #396df2;
+  padding: 2px 10px;
+  border-radius: 5px;
+}
+
+.card input[type="button"],
+.grid input[type="button"] {
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+form ul li button {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  left: 24px;
+  top: 5317px;
+  margin-top: 22px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+}
+
+.card input[type="button"],
+.card button,
+.grid input[type="button"]:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+.flex {
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 250px;
+}
+
+.grid {
+  background-color: #fff;
+  margin-left: -6px;
+  padding: 144px 24px 0 24px;
+  border-top-right-radius: 20%;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+.grid ul li {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.grid ul {
+  display: grid;
+  grid-template-columns: repeat(6, 20px);
+  justify-self: flex-start;
+  gap: 0 8px;
+  margin-left: -37px;
+}
+
+.grid a {
+  text-decoration: none;
+  color: #7f8cff;
+}
+
+.works ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.works ul li {
+  position: static;
+  width: 303px;
+  height: 66.72px;
+  left: 12px;
+  top: 12px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.works h4 {
+  height: 24px;
+  width: 237px;
+  left: 12px;
+  top: 24px;
+}
+
+.form-field ul li {
+  list-style-type: none;
+  margin-left: -20px;
+}
+
+.works .fram li {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ebebff;
+}
+
+ul .lg {
+  display: flex;
+  gap: 0 10px;
+  padding-left: 10px;
+}
+
+.works h3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.works h3 span {
+  margin-left: -65px;
+}
+
+.works .fram {
+  padding-bottom: 150px;
+}
+
+.contact-form {
+  height: 779px;
+  background-color: #6070ff;
+  margin-top: -35px;
+  margin-left: -6px;
+  background-image: url("./images/contact-form-shapes-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20%;
+}
+
+.contact-form h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  padding-top: 103px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  height: 48px;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 20px;
+  padding-left: 16px;
+  color: #172b4d;
+  border: none;
+}
+
+form input[type="text"],
+form input[type="email"],
+textarea:focus {
+  outline: none;
+}
+
+footer {
+  padding-bottom: 45px;
+}
+
+.bottom {
+  padding-left: 20px;
+}
+
+.form-field textarea {
+  width: 90%;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  margin-top: 30px;
+  margin-right: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b3bac5;
+  padding: 15px 16px;
+}
