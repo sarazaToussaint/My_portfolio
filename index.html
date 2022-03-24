@@ -220,9 +220,8 @@
         </div>
       </section>
 
-      <footer class="contact-form">
-        <div class="bottom">
-          <div>
+      <footer class="contact_form">
+          <div class="contact_header">
             <h2>Contact me</h2>
             <p>
               If you have an application you are interested in developing, a
@@ -231,43 +230,14 @@
             </p>
           </div>
 
-          <div class="form-field">
-            <form action="/my-handling-form-page" method="post">
-              <ul>
-                <li>
-                  <input
-                    type="text"
-                    id="name"
-                    name="user_name"
-                    placeholder="Your name"
-                    maxlength="30"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    type="email"
-                    id="mail"
-                    name="user_email"
-                    placeholder="Email"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    id="msg"
-                    name="user_message"
-                    maxlength="500"
-                    placeholder="Write your message here"
-                  ></textarea>
-                </li>
-                <li>
-                  <button type="submit">Get in touch</button>
-                </li>
-              </ul>
+          <div class="my_form">
+            <form action="https://formspree.io/f/form_id" method="post" class="form_content">
+              <input name="name" id="fullName" type="text" maxlength="30" placeholder="Your name" required>
+              <input name="Email" id="email" type="email" placeholder="saraza@gmail.com" required>
+              <textarea name="text" id="text" maxlength="500" placeholder="Enter your message here" required></textarea>
+              <button type="submit">Get It Touch</button>
             </form>
           </div>
-        </div>
       </footer>
     </main>
   </body>
