@@ -249,7 +249,6 @@ h1 .l-2 {
 }
 
 .works ul li {
-  position: static;
   width: 303px;
   height: 66.72px;
   left: 12px;
@@ -264,17 +263,6 @@ h1 .l-2 {
   width: 237px;
   left: 12px;
   top: 24px;
-}
-
-.works .fram li {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  background-color: #fff;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 5px;
-  border-bottom: 1px solid #ebebff;
 }
 
 ul .lg {
@@ -292,15 +280,11 @@ ul .lg {
   margin-left: -65px;
 }
 
-.works .fram {
-  padding-bottom: 150px;
-}
-
 .contact_form {
   height: auto;
   width: 100%;
   background-color: #6070ff;
-  margin-top: -35px;
+  margin-top: -20px;
   background-image: url("./images/contact-form-shapes-mobile.svg");
   background-repeat: no-repeat;
   object-fit: fill;
@@ -364,7 +348,29 @@ ul .lg {
   color: #fff;
 }
 
-@media (min-width: 992px) {
+.framework {
+  display: flex;
+  align-items: center;
+  gap: 250px;
+  border-bottom: 2px solid #ebebff;
+}
+
+.containter {
+  margin-bottom: 100px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+  border-bottom: 2px solid #ebebff;
+}
+
+@media (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header a {
     width: 100px;
     height: 20px;
@@ -466,5 +472,148 @@ ul .lg {
     color: #7f8cff;
     margin: 12px 0;
     text-align: center;
+  }
+
+  .card-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .card-2 {
+    display: flex;
+    gap: 0 46px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+    border-bottom-right-radius: 0;
+  }
+
+  .card-2 .about-div {
+    padding-left: 142px;
+    top: 126px;
+    width: 40%;
+  }
+
+  .card-2 .works {
+    width: 60%;
+    justify-self: start;
+  }
+
+  .works ul {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    height: 70px;
+    margin-top: 50px;
+  }
+
+  .works ul li img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .works ul li {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 90px;
+    padding-top: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+  }
+
+  .contact-header p {
+    width: 569px;
+    height: 102px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .works ul li p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #253858;
+  }
+
+  .contact-header h2 {
+    width: 801px;
+    height: 56px;
+    left: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .my_form input {
+    width: 447px;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+    align-items: center;
+  }
+
+  .my_form textarea {
+    height: 170px;
+    width: 447px;
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+  }
+
+  .my_form button {
+    height: 48px;
+    width: 140px;
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .framework {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    border-bottom: 2px solid #ebebff;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    gap: 450px;
+    border-bottom: 2px solid #ebebff;
+    margin-right: 100px;
+  }
+
+  .card-3 {
+    gap: 0 46px;
+  }
+
+  .img-pos {
+    order: 1;
   }
 }
