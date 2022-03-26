@@ -10,6 +10,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: white;
 }
@@ -190,24 +191,26 @@ h1 .l-2 {
   border-radius: 5px;
 }
 
-.card input[type="button"],
-.grid input[type="button"] {
+.btn-over {
   font-weight: 500;
   font-size: 17px;
   text-align: center;
   padding: 10px;
   color: #396df2;
-  border: 1px solid #396df2;
   border-radius: 10px;
   background-color: #fff;
   margin-bottom: 20px;
+  border: 1px solid #dfe1e6;
 }
 
-.card input[type="button"],
-.card button,
-.grid input[type="button"]:hover {
-  color: #fff;
+.btn-over:hover {
   background-color: #6070ff;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-over:active {
+  background-color: #2230d2;
 }
 
 .flex {
@@ -249,7 +252,6 @@ h1 .l-2 {
 }
 
 .works ul li {
-  width: 303px;
   height: 66.72px;
   left: 12px;
   top: 12px;
@@ -285,10 +287,9 @@ ul .lg {
   width: 100%;
   background-color: #6070ff;
   margin-top: -20px;
-  background-image: url("./images/contact-form-shapes-mobile.svg");
+  background-image: url(./images/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
-  object-fit: fill;
-  background-size: cover;
+  background-position: right;
   border-top-left-radius: 150px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -300,6 +301,9 @@ ul .lg {
   padding: 20px;
   font-family: 'Poppins', sans-serif;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form_content {
@@ -425,7 +429,6 @@ ul .lg {
 
   .introduction_section .intro_title h1 {
     position: static;
-    width: 920px;
     height: 122px;
     left: 0;
     top: 0;
@@ -439,9 +442,20 @@ ul .lg {
     color: #091e42;
   }
 
+  .par-overflow {
+    padding-right: 36px;
+  }
+
+  .par2-overflows {
+    padding-right: 50px;
+  }
+
+  .contact_header p {
+    padding: 0 19rem;
+  }
+
   .intro_descript p {
     position: static;
-    width: 920px;
     height: 98px;
     left: 0;
     top: 134px;
@@ -489,17 +503,22 @@ ul .lg {
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     border-bottom-right-radius: 0;
+    padding: 70px;
+  }
+
+  .about-div h2,
+  .headline h2 {
+    color: #091e42;
   }
 
   .card-2 .about-div {
-    padding-left: 142px;
-    top: 126px;
-    width: 40%;
+    width: 60%;
   }
 
   .card-2 .works {
-    width: 60%;
+    width: 40%;
     justify-self: start;
+    margin-top: 50px;
   }
 
   .works ul {
@@ -583,6 +602,7 @@ ul .lg {
     padding: 12px 16px;
     display: flex;
     flex-direction: row;
+    margin-left: 188px;
   }
 
   .contact_form {
@@ -595,18 +615,16 @@ ul .lg {
   .framework {
     display: flex;
     align-items: center;
-    gap: 400px;
     border-bottom: 2px solid #ebebff;
-    margin-right: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
+    gap: 250px;
   }
 
   .skill {
     display: flex;
     align-items: center;
-    gap: 450px;
     border-bottom: 2px solid #ebebff;
-    margin-right: 100px;
+    gap: 300px;
   }
 
   .card-3 {
