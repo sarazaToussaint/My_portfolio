@@ -226,7 +226,6 @@ h1 .l-2 {
 
 .grid {
   background-color: #fff;
-  margin-left: -6px;
   padding: 144px 24px 0 24px;
   border-top-right-radius: 200px;
   margin-top: 200px;
@@ -240,51 +239,13 @@ h1 .l-2 {
 
 .grid ul {
   display: grid;
-  grid-template-columns: repeat(6, 20px);
   justify-self: flex-start;
   gap: 0 8px;
-  margin-left: -37px;
 }
 
 .grid a {
   text-decoration: none;
   color: #7f8cff;
-}
-
-.works ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.works ul li {
-  height: 66.72px;
-  left: 12px;
-  top: 12px;
-  background-color: #f7f7f9;
-  border-radius: 8px;
-  margin: 12px 0;
-}
-
-.works h4 {
-  height: 24px;
-  width: 237px;
-  left: 12px;
-  top: 24px;
-}
-
-ul .lg {
-  display: flex;
-  gap: 0 10px;
-  padding-left: 10px;
-}
-
-.works h3 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.works h3 span {
-  margin-left: -109px;
 }
 
 .contact_form {
@@ -357,27 +318,53 @@ ul .lg {
   color: #fff;
 }
 
-.framework {
+.title {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 250px;
-  border-bottom: 2px solid #ebebff;
+  color: #344563;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.containter {
-  margin-bottom: 100px;
+.lang img {
+  width: 20px;
+  height: 20px;
 }
 
-.skill {
-  display: flex;
-  align-items: center;
-  gap: 300px;
-  border-bottom: 2px solid #ebebff;
+.list .back {
+  display: grid;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 10px 50px 30px 5px;
+  width: 80%;
+  height: 50px;
+  background-color: #f7f7f9;
+}
+
+.border {
+  background: #dfe1e6;
+  width: 85%;
+  height: 1px;
 }
 
 @media (min-width: 768px) {
   body {
     overflow-x: hidden;
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  .grid ul {
+    display: grid;
+    justify-self: flex-start;
+    gap: 0 8px;
   }
 
   header a {
@@ -398,11 +385,6 @@ ul .lg {
 
   nav img {
     display: none;
-  }
-
-  nav ul {
-    list-style-type: none;
-    display: flex;
   }
 
   nav ul li {
@@ -517,35 +499,7 @@ ul .lg {
   }
 
   .card-2 .about-div {
-    width: 60%;
-  }
-
-  .card-2 .works {
     width: 40%;
-    justify-self: start;
-    margin-top: 50px;
-  }
-
-  .works ul {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    height: 70px;
-    margin-top: 50px;
-  }
-
-  .works ul li img {
-    width: 38px;
-    height: 38px;
-  }
-
-  .works ul li {
-    display: flex;
-    flex-direction: column;
-    width: 90px;
-    height: 90px;
-    padding-top: 12px;
-    background: #f7f7f9;
-    border-radius: 8px;
   }
 
   .contact-header p {
@@ -558,15 +512,74 @@ ul .lg {
     text-align: center;
   }
 
-  .works ul li p {
+  .about-img {
+    grid-column: 2/3;
+    width: 60%;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    column-gap: 30px;
+  }
+
+  .about-img ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 51%;
+  }
+
+  .about-text {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .title {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    color: #344563;
+    margin-bottom: 5px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 20px;
+  }
+
+  .list {
     display: flex;
-    align-items: center;
-    color: #253858;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .list .back {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 5px 30px 20px 5px;
+    margin: 15px 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f9;
+  }
+
+  .border {
+    background: #dfe1e6;
+    width: 82%;
+    height: 1px;
+    margin-bottom: 5px;
+  }
+
+  .lang img {
+    width: 15px;
+    height: 15px;
   }
 
   .contact-header h2 {
@@ -622,14 +635,14 @@ ul .lg {
     align-items: center;
     border-bottom: 2px solid #ebebff;
     margin-top: 50px;
-    gap: 250px;
+    gap: 495px;
   }
 
   .skill {
     display: flex;
     align-items: center;
     border-bottom: 2px solid #ebebff;
-    gap: 300px;
+    gap: 535px;
   }
 
   .card-3 {
