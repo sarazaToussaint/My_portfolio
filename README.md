@@ -18,6 +18,10 @@
 
 To get a local copy up and running follow these simple example steps.
 
+git clone https://github.com/sarazaToussaint/My_portofolio.git
+cd My_portofolio
+
+
 ### Prerequisites
 
 ### Install
