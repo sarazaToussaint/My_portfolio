@@ -16,6 +16,11 @@
           <h3>My Logo</h3>
         </a>
         <nav>
+          <ul>
+            <li>Portofolio</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
           <img src="./images/list.svg" alt="Logo" />
         </nav>
       </header>
@@ -55,7 +60,7 @@
           </ul>
         </div>
       </section>
-      <section class="headline card">
+      <section class="headline card card-1 card-3">
         <img src="./images/SnapshootPortfolio.svg" alt="portofolio" />
         <div>
           <h2>Tonic</h2>
@@ -65,25 +70,77 @@
             <p>2015</p>
           </div>
           <div>
-            <p>
+            <p class="par-overflow">
               A daily selection of privately personalized reads; no accounts or
               sign-ups required.
             </p>
           </div>
-          <ul class="l-1">
+          <ul class="l-1 l-3">
             <li>Html</li>
             <li>Css</li>
             <li>Javascript</li>
           </ul>
-          <input type="button" value="See Project" />
+          <button class="btn-over" type="button">See Project</button>
         </div>
       </section>
 
-      <section class="headline card">
-        <img src="./images/SnapshootPortfolio1.svg" alt="portofolio" />
+      <section class="headline card card-1">
+        <img src="./images/SnapshootPortfolio1.svg" class="img-pos" alt="portofolio" />
         <div>
           <h2>
-            Multi-Post<br />
+            Multi-Post
+            Stories
+          </h2>
+          <div class="l-1">
+            <p>CANOPY</p>
+            <p>BackEndDev</p>
+            <p>2015</p>
+          </div>
+          <div>
+            <p class="par-overflow">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+          </div>
+          <ul class="l-1 l-3">
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn-over" type="button">See Project</button>
+        </div>
+      </section>
+
+      <section class="headline card card-1 card-3">
+        <img src="./images/SnapshootPortfolio2.svg" alt="snapshoot"/>
+        <div>
+          <h2>Tonic</h2>
+          <div class="l-1">
+            <p>CANOPY</p>
+            <p>BackEndDev</p>
+            <p>2015</p>
+          </div>
+          <div>
+            <p class="par2-overflows">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+          </div>
+          <ul class="l-1 l-3">
+            <li>Html</li>
+            <li>Css</li>
+            <li>Javascript</li>
+          </ul>
+          <button class="btn-over" type="button">See Project</button>
+        </div>
+      </section>
+
+      <section class="headline card card-1">
+        <img src="./images/SnapshootPortfolio3.svg" class="img-pos" alt="SnapShoot"/>
+
+        <div>
+          <h2>
+            Multi-Post
             Stories
           </h2>
           <div class="l-1">
@@ -97,67 +154,18 @@
               sign-ups required.
             </p>
           </div>
-          <ul class="l-1">
+          <ul class="l-1 l-3">
             <li>Html</li>
             <li>Css</li>
             <li>Javascript</li>
           </ul>
-          <input type="button" value="See Project" />
+          <button class="btn-over" type="button">See Project</button>
         </div>
       </section>
 
-      <section class="headline card">
-        <img src="./images/SnapshootPortfolio2.svg" alt="snapshoot"/>
-        <div>
-          <h2>Tonic</h2>
-          <div class="l-1">
-            <p>CANOPY</p>
-            <p>BackEndDev</p>
-            <p>2015</p>
-          </div>
-          <div>
-            <p>
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-          </div>
-          <ul class="l-1">
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-          </ul>
-          <input type="button" value="See Project" />
-        </div>
-      </section>
+      <section class="grid card-2">
 
-      <section class="headline card">
-        <img src="./images/SnapshootPortfolio3.svg" alt="SnapShoot"/>
-
-        <h2>
-          Multi-Post<br />
-          Stories
-        </h2>
-        <div class="l-1">
-          <p>CANOPY</p>
-          <p>BackEndDev</p>
-          <p>2015</p>
-        </div>
-        <div>
-          <p>
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-        </div>
-        <ul class="l-1">
-          <li>Html</li>
-          <li>Css</li>
-          <li>Javascript</li>
-        </ul>
-        <input type="button" value="See Project" />
-      </section>
-
-      <section class="grid">
-        <div>
+        <div class="about-div">
           <h2>About<br />Myself</h2>
           <p>
             Hello I’m a software developer! I can help you build a product ,
@@ -186,37 +194,41 @@
               <a href="#"><img src="./images/Vector3.svg" alt="Vector3" /></a>
             </li>
           </ul>
-          <input type="button" value="Get my resume" />
+          <button class="btn-over" type="button">Get my resume</button>
         </div>
-        <div class="works">
-          <h3>
-            <span>Languages</span>
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-          </h3>
-          <ul>
-            <li class="lg">
-              <img src="./images/html.svg" alt="html" />
-              <p>HTML</p>
+      
+        <div class="about-img">
+          <div class="lang title">
+            <h2>Languages</h2>
+            <img src="./images/chevron-v.png" alt="Language" />
+          </div>
+
+          <ul class="list">
+            <li class="back">
+              <a href="#"
+                ><img src="./images/js.png" alt="Javascript"
+              /></a>
+              Javascript
             </li>
-            <li class="lg">
-              <img src="./images/css.svg" alt="css" />
-              <p>CSS</p>
+            <li class="back">
+              <a href="#"><img src="./images/html.svg" alt="HTML" /></a>
+              HTML
             </li>
-            <li class="lg">
-              <img src="./images/js.png" alt="javascript" />
-              <p>Javascript</p>
-            </li>
-          </ul>
-          <ul class="fram">
-            <li>
-              <p>Frameworks</p>
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
-            </li>
-            <li class="skills">
-              <p>Skills</p>
-              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <li class="back">
+              <a href="#"><img src="./images/css.svg" alt="CSS" /></a>
+              CSS
             </li>
           </ul>
+          <div class="lang title">
+            <p>Framework</p>
+            <img src="./images/chevron-h.png" alt="Framework" />
+          </div>
+          <div class="border"></div>
+          <div class="lang title">
+            <p>Skills</p>
+            <img src="./images/chevron-h.png" alt="Skills" />
+          </div>
+          <div class="border"></div>
         </div>
       </section>
 
