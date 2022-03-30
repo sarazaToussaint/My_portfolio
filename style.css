@@ -107,7 +107,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #5263FF;
+  color: #5263ff;
   font-size: 16px;
 }
 
@@ -196,7 +196,7 @@ h1 .l-2 {
   list-style: none;
   background-color: #ebebff;
   font-size: 12px;
-  color: #0D45D3;
+  color: #0d45d3;
   padding: 2px 10px;
   border-radius: 5px;
 }
@@ -206,7 +206,7 @@ h1 .l-2 {
   font-size: 17px;
   text-align: center;
   padding: 10px;
-  color: #0D45D3;
+  color: #0d45d3;
   border-radius: 10px;
   background-color: #fff;
   opacity: 0.9;
@@ -216,9 +216,9 @@ h1 .l-2 {
 }
 
 .btn-over:hover {
-  background-color: #2E43FF;
+  background-color: #2e43ff;
   cursor: pointer;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn-over:active {
@@ -322,7 +322,7 @@ h1 .l-2 {
 }
 
 .form_content button:hover {
-  background-color: #2E43FF;
+  background-color: #2e43ff;
   color: #fff;
   opacity: 0.9;
   border: 1px solid #fff;
