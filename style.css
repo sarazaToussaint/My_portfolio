@@ -17,7 +17,7 @@ header {
 
 header a {
   font-family: 'Poppins', sans-serif;
-  color: #6070ff;
+  color: #5263ff;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
@@ -25,7 +25,7 @@ header a {
 
 header nav {
   font-family: 'Poppins', sans-serif;
-  color: #6070ff;
+  color: #5263ff;
   font-weight: bold;
   display: grid;
   justify-content: center;
@@ -106,7 +106,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #6070ff;
+  color: #5263FF;
   font-size: 16px;
 }
 
@@ -215,7 +215,7 @@ h1 .l-2 {
 }
 
 .btn-over:hover {
-  background-color: #6070ff;
+  background-color: #5263ff;
   cursor: pointer;
   color: #fff;
 }
@@ -251,13 +251,13 @@ h1 .l-2 {
 
 .grid a {
   text-decoration: none;
-  color: #7f8cff;
+  color: #5263ff;
 }
 
 .contact_form {
   height: auto;
   width: 100%;
-  background-color: #6070ff;
+  background-color: #5263ff;
   margin-top: -20px;
   background-image: url(./images/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
@@ -310,7 +310,7 @@ h1 .l-2 {
 .form_content button {
   height: 50px;
   width: 40%;
-  color: #6070ff;
+  color: #5263ff;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -320,7 +320,7 @@ h1 .l-2 {
 }
 
 .form_content button:hover {
-  background-color: #6070ff;
+  background-color: #5263ff;
   color: #fff;
   opacity: 0.9;
   border: 1px solid #fff;
@@ -388,7 +388,7 @@ h1 .l-2 {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #6070ff;
+    color: #5263ff;
   }
 
   nav img {
