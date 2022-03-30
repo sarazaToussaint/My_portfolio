@@ -208,6 +208,7 @@ h1 .l-2 {
   color: #396df2;
   border-radius: 10px;
   background-color: #fff;
+  opacity: 0.9;
   margin-bottom: 20px;
   border: 1px solid #dfe1e6;
   transition: all 0.5s;
@@ -321,6 +322,8 @@ h1 .l-2 {
 .form_content button:hover {
   background-color: #6070ff;
   color: #fff;
+  opacity: 0.9;
+  border: 1px solid #fff;
 }
 
 .title {
