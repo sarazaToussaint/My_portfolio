@@ -17,15 +17,16 @@ header {
 
 header a {
   font-family: 'Poppins', sans-serif;
-  color: #6070ff;
+  color: #5263ff;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
+  outline: none;
 }
 
 header nav {
   font-family: 'Poppins', sans-serif;
-  color: #6070ff;
+  color: #5263ff;
   font-weight: bold;
   display: grid;
   justify-content: center;
@@ -66,6 +67,11 @@ h1 {
   border-bottom-left-radius: 100px;
 }
 
+.introduction_section > * {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
 .introduction_section .intro_title h1 {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
@@ -101,7 +107,7 @@ h1 {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #6070ff;
+  color: #5263ff;
   font-size: 16px;
 }
 
@@ -190,7 +196,7 @@ h1 .l-2 {
   list-style: none;
   background-color: #ebebff;
   font-size: 12px;
-  color: #396df2;
+  color: #0d45d3;
   padding: 2px 10px;
   border-radius: 5px;
 }
@@ -200,16 +206,17 @@ h1 .l-2 {
   font-size: 17px;
   text-align: center;
   padding: 10px;
-  color: #396df2;
+  color: #0d45d3;
   border-radius: 10px;
   background-color: #fff;
+  opacity: 0.9;
   margin-bottom: 20px;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #757575;
   transition: all 0.5s;
 }
 
 .btn-over:hover {
-  background-color: #6070ff;
+  background-color: #2e43ff;
   cursor: pointer;
   color: #fff;
 }
@@ -245,13 +252,13 @@ h1 .l-2 {
 
 .grid a {
   text-decoration: none;
-  color: #7f8cff;
+  color: #5263ff;
 }
 
 .contact_form {
   height: auto;
   width: 100%;
-  background-color: #6070ff;
+  background-color: #5263ff;
   margin-top: -20px;
   background-image: url(./images/contact-form-shapes-mobile.svg);
   background-repeat: no-repeat;
@@ -302,9 +309,10 @@ h1 .l-2 {
 }
 
 .form_content button {
+  background-color: #fff;
   height: 50px;
   width: 40%;
-  color: #6070ff;
+  color: #5263ff;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -314,8 +322,10 @@ h1 .l-2 {
 }
 
 .form_content button:hover {
-  background-color: #6070ff;
+  background-color: #2e43ff;
   color: #fff;
+  opacity: 0.9;
+  border: 1px solid #fff;
 }
 
 .title {
@@ -380,7 +390,7 @@ h1 .l-2 {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #6070ff;
+    color: #5263ff;
   }
 
   nav img {
@@ -409,8 +419,6 @@ h1 .l-2 {
 
   .introduction_section {
     justify-content: center;
-    padding-left: 260px;
-    padding-right: 260px;
     color: #fff;
   }
 
