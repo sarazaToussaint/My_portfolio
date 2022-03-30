@@ -216,7 +216,7 @@ h1 .l-2 {
 }
 
 .btn-over:hover {
-  background-color: #3347FF;
+  background-color: #2E43FF;
   cursor: pointer;
   color: #ffffff;
 }
@@ -309,6 +309,7 @@ h1 .l-2 {
 }
 
 .form_content button {
+  background-color: #fff;
   height: 50px;
   width: 40%;
   color: #5263ff;
@@ -321,8 +322,8 @@ h1 .l-2 {
 }
 
 .form_content button:hover {
-  background-color: #3347FF;
-  color: #ffffff;
+  background-color: #2E43FF;
+  color: #fff;
   opacity: 0.9;
   border: 1px solid #fff;
 }
