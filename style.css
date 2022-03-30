@@ -21,6 +21,7 @@ header a {
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
+  outline: none;
 }
 
 header nav {
@@ -215,9 +216,9 @@ h1 .l-2 {
 }
 
 .btn-over:hover {
-  background-color: #5263ff;
+  background-color: #4255FF;
   cursor: pointer;
-  color: #fff;
+  color: #ffffff;
 }
 
 .btn-over:active {
@@ -320,8 +321,8 @@ h1 .l-2 {
 }
 
 .form_content button:hover {
-  background-color: #5263ff;
-  color: #fff;
+  background-color: #4255FF;
+  color: #ffffff;
   opacity: 0.9;
   border: 1px solid #fff;
 }
