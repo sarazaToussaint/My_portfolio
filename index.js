@@ -1,9 +1,21 @@
-function openMenu() {
-    document.getElementById('mobile-menu').style.display = 'block';
-}
+const openMenu = document.querySelector('#hamburger');
+const closeButton = document.querySelector('.closeIcon');
+const closeItems = document.querySelector('.items');
 
-openMenu();
+openMenu.onclick = function openMenu() {
+  document.querySelector('.open').style = 'display: block';
+  document.querySelector('#hamburger').style = 'display: none';
+  document.querySelector('body').style = 'overflow: hidden';
+};
 
-function closeMenu() {
-    document.getElementById('mobile-menu').style.display = 'none';
-}
+closeButton.onclick = function closeMenu() {
+  document.querySelector('nav').style.display = 'none';
+  document.querySelector('#hamburger').style = 'display: block';
+  document.querySelector('body').style = 'overflow: scroll';
+};
+
+closeItems.onclick = function closeItem() {
+  document.querySelector('nav').style.display = 'none';
+  document.querySelector('#hamburger').style = 'display: block';
+  document.querySelector('body').style = 'overflow: scroll';
+};

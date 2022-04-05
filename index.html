@@ -13,27 +13,30 @@
 
 <body>
     <header>
-        <a href="#">
-            <h3>My Logo</h3>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#portfolio">Portofolio</a></li>
+		<div class="container">
+           <div class="topNav">
+               <a href="#"><h3>My Logo</h3> </a>
+		       <div class="nav-toggle" id="navToggle">
+		           <img id="hamburger" src="./images/list.svg" alt="Logo" class="navIcon"/>
+               </div>
+              <ul id="listItems" class="topRight">
+                  <li><a href="#home">Portofolio</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+		</div>
+        <nav class="open">
+            <img src="./images/close.png" alt="close icon" class="closeIcon hidden "/>
+            <ul class="items">
+                <li><a href="#home">Portofolio</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <img src="./images/list.svg" onclick="openMenu()" alt="Logo" />
         </nav>
-        <div id="mobile-menu">
-            <img src="./images/close.png" onclick="closeMenu()" alt="" />
-            <ul>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
+        
     </header>
-    <section class="introduction_section">
+    <section class="introduction_section" id="home">
         <div class="intro_title">
             <h1>
                 I'm Saraza<br /> Glad to see you!
@@ -168,7 +171,7 @@
                 </p>
                 <a href="#">LET'S CONNECT</a>
 
-                <ul>
+                <ul id="icon-container">
                     <li>
                         <a href="#"><img src="./images/Vector4.svg" alt="Twitter Logo" /></a>
                     </li>
