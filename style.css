@@ -47,24 +47,33 @@ nav {
 }
 
 .article {
-  display: block;
+  display: none;
   width: 100%;
   height: auto;
   background-color: #fff;
   z-index: 1;
   font-family: 'Poppin', sans-serif;
   border-radius: 16px;
+  margin-bottom: 20px;
 }
 
 .closeBtn {
-  background-color: #67798e;
+  margin-left: -40px;
 }
+
+p {
+  color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .article p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 24px;
+  color: #344563;
 }
 
 .pop-img img {
@@ -131,7 +140,7 @@ nav {
 
 .separater {
   border-bottom: 1px solid#ebecf0;
-  margin: 30px 20px;
+  margin: 10px 20px;
 }
 
 .container {
@@ -175,12 +184,6 @@ nav {
   right: 1rem;
   width: 100px;
   height: 100px;
-}
-
-p {
-  color: #344563;
-  font-size: 16px;
-  line-height: 24px;
 }
 
 .grid h2 {
@@ -558,6 +561,90 @@ h1 .l-2 {
     display: none;
   }
 
+  .article2 {
+    /* position: fixed; */
+    height: 800px;
+    background-color: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    margin: -120px 200px;
+    justify-self: center;
+    z-index: 0;
+    display: none;
+  }
+
+  .separater {
+    width: 298px;
+  }
+
+  .pop-img img {
+    width: 800px;
+    height: 586px;
+  }
+
+  .desktop {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 0 24px;
+  }
+
+  .pop-img {
+    margin-bottom: 59px;
+  }
+
+  .pop-title {
+    margin-top: 0;
+  }
+
+  .article2 button {
+    width: 130px;
+    height: 40px;
+    left: 157px;
+    margin-bottom: 20px;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    align-items: center;
+    color: #6070ff;
+  }
+
+  .lang img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .article2 button img {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .span .l-1 li {
+    background-color: #ebebff;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding-right: 5px;
+  }
+
+  .span .l-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+  }
+
+  .buttons {
+    margin-left: 20px;
+  }
+
   .introduction_section {
     justify-content: center;
     color: #fff;
@@ -729,11 +816,6 @@ h1 .l-2 {
     width: 82%;
     height: 1px;
     margin-bottom: 5px;
-  }
-
-  .lang img {
-    width: 15px;
-    height: 15px;
   }
 
   .contact-header h2 {

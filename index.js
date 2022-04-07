@@ -22,3 +22,20 @@ closeItems.onclick = function closeItem() {
   document.querySelector('body').style = 'overflow: scroll';
   document.querySelector('section').style = 'filter: none';
 };
+
+const modal = document.getElementById('simpleModal');
+const modalBtn = document.getElementById('modalBtn');
+const closeBtn = document.getElementById('closeModal');
+
+function openModal() {
+  modal.style = 'display: block; position: fixed; overflow-y: scroll';
+  document.querySelector('body').style = 'z-index: -1';
+}
+
+modalBtn.addEventListener('click', openModal);
+
+function closeModel() {
+  modal.style.display = 'none';
+}
+
+closeBtn.addEventListener('click', closeModel);
