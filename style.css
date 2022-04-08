@@ -76,12 +76,6 @@ p {
   color: #344563;
 }
 
-.pop-img img {
-  display: grid;
-  width: 100%;
-  height: auto;
-}
-
 #overlay {
   position: fixed;
   width: 100%;
@@ -603,6 +597,10 @@ h1 .l-2 {
 
   .pop-img {
     margin-bottom: 59px;
+  }
+
+  .pop-img img {
+    width: 818px;
   }
 
   .pop-title {
