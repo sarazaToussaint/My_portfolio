@@ -87,9 +87,9 @@ p {
 }
 
 .pop-img {
-  display: grid;
   justify-content: center;
   align-items: center;
+  width: 95%;
 }
 
 div h2 {
@@ -461,6 +461,24 @@ h1 .l-2 {
   margin: 10px 20px 10px 20px;
 }
 
+.form_content small {
+  display: none;
+}
+
+.error-message {
+  background-color: red;
+  color: #fff;
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+  padding: 5px 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 0 0 -5px 120px;
+  text-align: center;
+  border: 0.5px #fff solid;
+}
+
 .form_content button {
   background-color: #fff;
   height: 50px;
@@ -471,7 +489,7 @@ h1 .l-2 {
   border-radius: 8px;
   padding: 10px;
   font-family: 'Poppins', sans-serif;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 20px;
 }
 
 .form_content button:hover {
@@ -515,7 +533,7 @@ h1 .l-2 {
 }
 
 .article2 {
-  height: 500px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -619,11 +637,14 @@ h1 .l-2 {
   }
 
   .pop-img {
-    margin-bottom: 59px;
+    width: 100%;
   }
 
   .pop-img img {
-    width: 818px;
+    /* width: 818px; */
+    height: auto;
+    width: 95%;
+    object-fit: cover;
   }
 
   .pop-title {
@@ -966,5 +987,9 @@ h1 .l-2 {
 
   .intro_descript {
     animation: 1s ease-out 0s 1 slideInLeft;
+  }
+
+  #space {
+    margin: 0 20px;
   }
 }
