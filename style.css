@@ -92,6 +92,12 @@ p {
   align-items: center;
 }
 
+div h2 {
+  font-weight: 700;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .pop-title {
   display: flex;
   justify-content: space-between;
@@ -105,8 +111,10 @@ p {
   margin-bottom: 10px;
   gap: 0 5px;
   font-family: 'Poppin', sans-serif;
+  font-style: normal;
   width: 100%;
   font-size: 15px;
+  color: #757575;
 }
 
 .article2 li {
@@ -119,7 +127,7 @@ p {
 
 .pop-title h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0;
@@ -570,6 +578,12 @@ h1 .l-2 {
     right: 0;
     color: #344563;
     margin-top: -15px;
+  }
+
+  div h2 {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
   }
 
   nav {
