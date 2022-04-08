@@ -77,7 +77,25 @@ p {
 }
 
 .pop-img img {
+  display: grid;
   width: 100%;
+  height: auto;
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.pop-img {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .pop-title {
@@ -102,12 +120,8 @@ p {
   font-weight: 700;
   line-height: 44px;
   letter-spacing: 0;
-}
-
-.pop-img {
-  display: flex;
-  flex-direction: column;
-  margin: 0 16px;
+  padding: 0;
+  margin: 0;
 }
 
 .span {
@@ -119,7 +133,7 @@ p {
   color: #6070ff;
 }
 
-.article button {
+.article2 button {
   width: 146px;
   height: 48px;
   left: 157px;
@@ -135,6 +149,11 @@ p {
   line-height: 20px;
   text-align: center;
   align-items: center;
+  color: #6070ff;
+}
+
+.article2 button a {
+  text-decoration: none;
   color: #6070ff;
 }
 
@@ -243,14 +262,6 @@ p {
   line-height: 24px;
 }
 
-.connect_links a {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #5263ff;
-  font-size: 16px;
-}
-
 .connect_links ul {
   display: flex;
   padding: 0;
@@ -292,10 +303,6 @@ h1 .l-2 {
 .links ul li {
   list-style-type: none;
   margin-left: 5px;
-}
-
-.links > a {
-  text-decoration: none;
 }
 
 .card {
@@ -388,11 +395,6 @@ h1 .l-2 {
   display: grid;
   justify-self: flex-start;
   gap: 0 8px;
-}
-
-.grid a {
-  text-decoration: none;
-  color: #5263ff;
 }
 
 .contact_form {
@@ -501,6 +503,24 @@ h1 .l-2 {
   height: 1px;
 }
 
+.article2 {
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ebecf0;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 16px;
+  margin-top: 0;
+  justify-self: center;
+  width: 80%;
+  position: absolute;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
+  z-index: 99;
+  overflow-x: hidden;
+  padding: 40px;
+}
+
 @media (min-width: 768px) {
   body {
     overflow-x: hidden;
@@ -561,26 +581,18 @@ h1 .l-2 {
     display: none;
   }
 
-  .article2 {
-    /* position: fixed; */
-    height: 800px;
-    background-color: #fff;
-    border: 1px solid #ebecf0;
-    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-    border-radius: 16px;
-    margin: -120px 200px;
-    justify-self: center;
-    z-index: 0;
-    display: none;
+  #overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
   }
 
   .separater {
     width: 298px;
-  }
-
-  .pop-img img {
-    width: 800px;
-    height: 586px;
   }
 
   .desktop {
@@ -594,7 +606,7 @@ h1 .l-2 {
   }
 
   .pop-title {
-    margin-top: 0;
+    margin: 0;
   }
 
   .article2 button {
@@ -613,6 +625,44 @@ h1 .l-2 {
     line-height: 20px;
     text-align: center;
     align-items: center;
+    color: #6070ff;
+  }
+
+  .connect_link a {
+    position: static;
+    width: 117px;
+    height: 24px;
+    left: 0;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .links > a {
+    text-decoration: none;
+  }
+
+  .connect_links a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #5263ff;
+    font-size: 16px;
+  }
+
+  .grid a {
+    text-decoration: none;
+    color: #5263ff;
+  }
+
+  .article2 button a {
+    text-decoration: none;
     color: #6070ff;
   }
 
@@ -693,22 +743,6 @@ h1 .l-2 {
     flex-grow: 0;
     margin: 12px 0;
     justify-content: center;
-  }
-
-  .connect_link a {
-    position: static;
-    width: 117px;
-    height: 24px;
-    left: 0;
-    top: 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
-    margin: 12px 0;
-    text-align: center;
   }
 
   .card-1 {
@@ -881,11 +915,15 @@ h1 .l-2 {
     gap: 535px;
   }
 
+  .reverse {
+    flex-direction: row-reverse;
+  }
+
   .card-3 {
     gap: 0 46px;
   }
 
-  .img-pos {
+  [img-pos] {
     order: 1;
   }
 
