@@ -103,9 +103,18 @@ p {
   display: flex;
   margin-left: 16px;
   margin-bottom: 10px;
-  gap: 0 30px;
+  gap: 0 5px;
   font-family: 'Poppin', sans-serif;
   width: 100%;
+  font-size: 15px;
+}
+
+.article2 li {
+  background-color: #ebebff;
+  font-size: 12px;
+  color: #0d45d3;
+  padding: 2px 10px;
+  border-radius: 5px;
 }
 
 .pop-title h1 {
@@ -605,6 +614,12 @@ h1 .l-2 {
 
   .pop-title {
     margin: 0;
+  }
+
+  .pop-span {
+    font-family: 'Poppin', sans-serif;
+    color: #6b778c;
+    font-size: 15px;
   }
 
   .article2 button {
