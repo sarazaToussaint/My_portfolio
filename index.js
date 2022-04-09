@@ -75,7 +75,7 @@ const worksSection = document.getElementById('section-works');
 worksSection.innerHTML = worksList.map((work) => `
 <section class="headline card card-1" >
                 <img src="${work.imageLink}" ${work.id % 2 === 0 ? 'img-pos' : ''} alt="Snapshot of my first portfolio" />
-                <div>
+                <div id="space">
                     <h2>${work.title}</h2>
                     <div class="l-1">
                         <p>${work.specifics[0]}</p>
@@ -105,43 +105,7 @@ modalBtn.forEach((btn) => btn.addEventListener('click', (e) => {
   const id = e.target.getAttribute('data-id');
   const work = worksList.find((work) => work.id === +id);
   modalSection.innerHTML = `
-  <div id="overlay"></div>
-   <article class="article">
-        <div class="pop-title">
-            <h1>${work.title}</h1>
-            <div>
-             <img src="./images/cross.svg" class="closeBtn" alt="close Button" />
-            </div>
-        </div>
-        <div class="pop-span">
-            <span>${work.specifics[0]}</span>
-            <span>${work.specifics[1]}</span>
-            <span>${work.specifics[2]}</span>
-        </div>
-        <div class="pop-img">
-            <div>
-                <img src="${work.imageLink}" alt="Popup image">
-            </div>
-            <div>
-                <p>
-                    ${work.fullDescription}
-                </p>
-            </div>
-        </div>
-        
-        <div class="span">
-            <ul class="l-1 l-3">
-                <li>${work.languages[0]}</li>
-                <li>${work.languages[1]}</li>
-                <li>${work.languages[2]}</li>
-            </ul>
-        </div>
-        <div class="separater"></div>
-        <div>
-            <button> <a href="${work.liveLink}">See live</a> <img src="./images/Export.svg" alt=""></button>
-            <button> <a href="${work.sourceLink}">See source</a> <img src="./images/githubB.svg" alt=""></button>
-        </div>
-    </article>
+ // <div id="overlay"></div>
 
     <article id="simpleModal" class="article2">
         <div class="pop-title">
@@ -156,9 +120,9 @@ modalBtn.forEach((btn) => btn.addEventListener('click', (e) => {
             <span>${work.specifics[2]}</span>
         </div>
         <div class="pop-img">
-            <div>
+            
                 <img src="${work.imageLink}" alt="Popup image">
-            </div>
+            
         </div>
 
         <div class="desktop">
@@ -196,3 +160,24 @@ modalBtn.forEach((btn) => btn.addEventListener('click', (e) => {
     overlaycolor.style.display = 'none';
   });
 }));
+
+function checkValidation(e) {
+  if (!e) {
+    document.getElementById('message-error').style.display = 'block';
+    document.getElementById('message-error').innerHTML = 'Lower case required please';
+    document.getElementById('email').style.border = '2px red solid';
+  }
+}
+
+const contactForm = document.querySelector('form');
+contactForm.addEventListener('submit', (elem) => {
+  elem.preventDefault();
+  const email = document.getElementById('email').value;
+  if (email !== email.toLowerCase()) {
+    checkValidation(false);
+  } else {
+    contactForm.submit();
+    contactForm.reset();
+    checkValidation(true);
+  }
+});
